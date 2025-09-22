@@ -11,7 +11,7 @@ import re
 from datetime import datetime
 
 class SerialDataReader:
-    def __init__(self, port='COM7', baudrate=9600):
+    def __init__(self, port='/dev/ttyUSB0', baudrate=9600):
         self.port = port
         self.baudrate = baudrate
         self.ser = None
